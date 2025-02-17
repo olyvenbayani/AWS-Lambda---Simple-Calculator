@@ -36,10 +36,6 @@ def lambda_handler(event, context):
         # Perform the requested operation
         if operation == 'addition':
             result = first + second
-        elif operation == 'subtraction':
-            result = first - second
-        elif operation == 'multiplication':
-            result = first * second
         elif operation == 'division':
             if second == 0:
                 return {
